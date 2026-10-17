@@ -1,0 +1,8 @@
+# /etc/fstab lines for permanent mounts (documented patterns).
+# SMB/CIFS — credentials in a root-only file, never inline here:
+#   /root/.smb-lab  contains:  username=labuser / password=...
+//server/labshare  /mnt/labshare  cifs  credentials=/root/.smb-lab,iocharset=utf8  0  0
+
+# NFS — _netdev waits for the network; soft/timeo keep a dead
+# server from hanging the client forever:
+server:/srv/nfsshare  /mnt/nfs  nfs  _netdev,soft,timeo=30  0  0

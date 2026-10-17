@@ -1,0 +1,4 @@
+# /etc/exports — one NFS export. Apply with: exportfs -ra
+# (client, options): read-write, synchronous, root on the
+# client is squashed to nobody on the server.
+/srv/nfsshare 127.0.0.1(rw,sync,no_subtree_check,root_squash)

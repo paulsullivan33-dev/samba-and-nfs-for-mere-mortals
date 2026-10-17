@@ -1,0 +1,23 @@
+site_name: Samba and NFS for Mere Mortals
+site_description: Plain-language file sharing. Samba shares Windows, macOS, and Linux can all reach, NFS exports for the Linux fleet, and the permission models explained with real runs.
+site_url: https://paulsullivan33-dev.github.io/samba-and-nfs-for-mere-mortals/
+
+# Guides live at the repo root (nice for GitHub browsing).
+# The deploy workflow copies them into docs/ before building.
+theme:
+  name: material
+
+nav:
+  - Home: index.md
+  - What File Sharing Is: what-file-sharing-is.md
+  - A Samba Server: samba-server.md
+  - Samba Users and Permissions: samba-users-and-permissions.md
+  - Using Samba: using-samba.md
+  - An NFS Server: nfs-server.md
+  - Using NFS: using-nfs.md
+  - Identity and Permissions: identity-and-permissions.md
+  - Choosing Between Them: choosing-between-them.md
+  - Security Notes: security-notes.md
+  - Troubleshooting: troubleshooting.md
+  - Glossary: glossary.md
+  - Writing Criteria: criteria.md
